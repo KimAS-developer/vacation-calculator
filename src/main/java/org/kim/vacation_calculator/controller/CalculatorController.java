@@ -19,7 +19,7 @@ public class CalculatorController {
         this.calculatorService = calculatorService;
     }
 
-    @GetMapping
+    @PostMapping
     public BigDecimal calculateVacationPay(
             @RequestBody @Valid VacationRequest request
     ) {
